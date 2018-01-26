@@ -1,0 +1,24 @@
+{
+  "name": "clock3d",
+  "version": "1.0.0",
+  "description": "simple Simple clock showing current time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CdSy/clock3d.git"
+  },
+  "keywords": [
+    "js",
+    "clock",
+    "widget"
+  ],
+  "author": "Aleksei Tuychiev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CdSy/clock3d/issues"
+  },
+  "homepage": "https://github.com/CdSy/clock3d#readme"
+}
