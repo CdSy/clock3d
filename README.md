@@ -3,7 +3,7 @@
 > Import:
 ```
 import Clock from 'clock3d';
-import from 'clock3d/style.css';
+import 'clock3d/style.css';
 ```
 You can override the styles for yourself
 
@@ -11,7 +11,7 @@ You can override the styles for yourself
 
 key | allowable values
 ------------- | -------------
-perspective  | bool
+perspective  | bool, class "perspective" will be applied to the root
 direction  | "up" or "down"
 root | DOM element
 

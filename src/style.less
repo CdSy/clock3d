@@ -2,21 +2,19 @@
 	box-sizing: border-box;
 }
 
-body {
-  perspective: none;
-  perspective-origin: center -5em;
-	
-	&.perspective {
-		perspective: 900px;
-	}
-}
-
 .clock {
 	display: flex;
 	height: 100vh;
 	justify-content: center;
 	align-items: center;
 	user-select: none;
+
+	perspective: none;
+  perspective-origin: center -5em;
+	
+	&.perspective {
+		perspective: 900px;
+	}
 }
 
 .side,

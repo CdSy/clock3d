@@ -64,7 +64,7 @@ export default class Clock {
 	}
 	
 	init() {
-		document.body.classList.toggle('perspective', this.options.perspective);
+		this.root.classList.toggle('perspective', this.options.perspective);
 		this.root.innerHTML = `
 		<div class="container js-hours">
     	<div class="back side"></div>
