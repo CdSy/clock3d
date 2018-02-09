@@ -1,74 +1,98 @@
 * {
-    box-sizing: border-box;
-  }
-  body {
-    perspective: none;
-    perspective-origin: center -5em;
-  }
-  body.perspective {
-    perspective: 900px;
-  }
-  .clock {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-  }
-  .side,
-  .container {
-    width: 10em;
-    height: 10em;
-  }
-  .container {
-    margin: 0 30px;
-    transform-style: preserve-3d;
-    transition: transform 0.4s ease;
-  }
-  .dots .dot {
-    width: 1.2em;
-    height: 1.2em;
-    margin: 20px 0;
-    border-radius: 50%;
-    background-color: #000;
-  }
-  .side {
-    position: absolute;
-    width: 10em;
-    height: 10em;
-    box-shadow: inset 0 0 0 2px #000;
-    text-align: center;
-  }
-  .side .text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    font-size: 6em;
-    font-family: helvetica;
-    transform: translate(-50%, -50%);
-  }
-  .back {
-    transform: translateZ(-5em) rotateY(180deg) rotateZ(180deg);
-    background: gold;
-  }
-  .left {
-    transform: translateX(-5em) rotateY(90deg);
-    background: gold;
-  }
-  .right {
-    transform: translateX(5em) rotateY(90deg);
-    background: gold;
-  }
-  .top {
-    transform: translateY(-5em) rotateX(90deg);
-    background: gold;
-  }
-  .bottom {
-    transform: translateY(5em) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
-    background: gold;
-  }
-  .front {
-    transform: translateZ(5em);
-    background: gold;
-  }
-  
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-perspective: none;
+          perspective: none;
+  -webkit-perspective-origin: center -5em;
+          perspective-origin: center -5em;
+}
+.clock.perspective {
+  -webkit-perspective: 900px;
+          perspective: 900px;
+}
+.side,
+.container {
+  width: 10em;
+  height: 10em;
+}
+.container {
+  margin: 0 30px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+.dots .dot {
+  width: 1.2em;
+  height: 1.2em;
+  margin: 20px 0;
+  border-radius: 50%;
+  background-color: #000;
+}
+.side {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  -webkit-box-shadow: inset 0 0 0 2px #000;
+          box-shadow: inset 0 0 0 2px #000;
+  text-align: center;
+}
+.side .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 6em;
+  font-family: helvetica;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.back {
+  -webkit-transform: translateZ(-5em) rotateY(180deg) rotateZ(180deg);
+          transform: translateZ(-5em) rotateY(180deg) rotateZ(180deg);
+  background: gold;
+}
+.left {
+  -webkit-transform: translateX(-5em) rotateY(90deg);
+          transform: translateX(-5em) rotateY(90deg);
+  background: gold;
+}
+.right {
+  -webkit-transform: translateX(5em) rotateY(90deg);
+          transform: translateX(5em) rotateY(90deg);
+  background: gold;
+}
+.top {
+  -webkit-transform: translateY(-5em) rotateX(90deg);
+          transform: translateY(-5em) rotateX(90deg);
+  background: gold;
+}
+.bottom {
+  -webkit-transform: translateY(5em) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
+          transform: translateY(5em) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
+  background: gold;
+}
+.front {
+  -webkit-transform: translateZ(5em);
+          transform: translateZ(5em);
+  background: gold;
+}

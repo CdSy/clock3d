@@ -1,7 +1,7 @@
 {
   "name": "clock3d",
-  "version": "1.0.0",
-  "description": "simple Simple clock showing current time",
+  "version": "1.0.1",
+  "description": "Simple clock showing current time",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
